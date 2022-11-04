@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: visible;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.checkin-card {
+  margin: 5vw;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+}
+
+.checkin-header {
+  flex: 1;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  padding: 3em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/a.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.checkin-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 3em;
+  background-color: white;
+}
+
+.group-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.group-row {
+  display: flex;
+  gap: 1.5em;
+}
+
+.group-row * {
+  flex: 1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  background-color: white;
+}
+
+.checkin-submit {
+  border: 1px solid #cccccc;
+  background-color: #c09e4f;
+  color: #ffffff;
+  padding: 0.8em;
+  transition-duration: 250ms;
+}
+
+.checkin-submit:hover,
+.checkin-submit:focus,
+.checkin-submit:active {
+  outline: none;
+  border: 1px solid #be9636;
+  background-color: #ffffff;
+  color: #be9636;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  border: 1px solid #ccc;
+  padding: 0.8em;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+select:hover,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #be9636;
+  box-shadow: 0px 0px 8px rgba(192, 158, 79, 0.5);
+  transition-duration: 500ms;
+}
+
+/* ... footer ... */
+.footer-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  background: black;
+  opacity: 80%;
+}
+
+.content-about {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  flex-basis: 50%;
+  flex-shrink: 0;
+  max-width: 30%;
+  height: 200px;
+  margin-left: 5%;
+}
+
+#about-title {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 24px;
+}
+
+#about-paragraph {
+  text-align: center;
+  margin: 40 70 0 70;
+  color: white;
+  font-size: 14px;
+}
+
+.content-pesan {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  flex-basis: 50%;
+  flex-shrink: 0;
+  max-width: 30%;
+  height: 200px;
+}
+
+#pesan-title {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 24px;
+}
+
+.content-social {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  flex-basis: 50%;
+  flex-shrink: 0;
+  max-width: 30%;
+  height: 200px;
+  margin-right: 5%;
+}
+
+#social-title {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 24px;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 20px;
+  color: #adadad;
+  background: black;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .card {
+    margin: 20px;
+  }
+
+  .checkin-card {
+    flex-direction: column;
+  }
+
+  .checkin-header {
+    padding: 5vw 3em;
+  }
+
+  .checkin-form {
+    padding: 2.5em;
+  }
+
+  .checkin-form .group-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .checkin-form {
+    padding: 1.5em;
+  }
+}
