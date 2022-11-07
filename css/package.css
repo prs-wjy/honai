@@ -1,0 +1,322 @@
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    text-align: center;
+  }
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 241);
+}
+
+/* -----------------------Package--------------------------------- */
+.content{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Breadcrumb */
+.package-breadcrumb{
+  width: 100%;
+  height: 200px;
+  padding-top: 160px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url(../img/honai-breadcrumb.png);
+  background-size: cover;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 0 16px;
+    list-style: none;
+}
+  
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:white;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: white;
+    content: ">\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    position: relative;
+    margin: auto;
+    color:white;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    transition: ease-in-out;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+    ul.breadcrumb li a:hover {
+    color: #BA9408;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+/* Tab Package */
+.tab{
+  width: 100%;
+}
+.tablinks {
+  background-color:  rgb(219, 219, 219);
+  color:rgb(94, 94, 94);
+  position: relative;
+  font-weight: bold;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  padding: 14px 16px;
+  font-size: 14px;
+  width: 50%;
+  height: 60px;
+}
+
+.tablinks:hover {
+  background-color: #aca38f;
+  font-weight: 600px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.tablinks.active {
+  background-color: #aca38f;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.package-title {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Package */
+.package-section{
+  width: 100%;
+  padding: 70px 200px 50px 200px;
+  box-sizing: border-box;
+}
+
+.package-canvas{
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 20px 0 20px 0;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.layout-slide .layout-slide2 .layout-slide3 .layout-slide4 .layout-slide5 .layout-slide6 .layout-slide7{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  transition: all 1s ease-in-out;
+  padding-top: 20px;
+  border-radius: 10px;
+  animation-delay: 2s;
+  background: none;
+}
+
+.package-container{
+  width: 100%;
+  display: flex;
+  padding: 30 100 30 100;
+  box-sizing: border-box;
+  height: 500px;
+}
+
+.package-layout {
+  position: relative;
+  flex-basis: 50%;
+  flex-shrink: 0;
+  max-width: 50%;
+  padding: 10px;
+  height: 400px;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.package-layout img{
+  height: 100%;
+  width: 100%;
+  transition: all 1s ease-in-out;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.package-layout img:hover{
+  transform: scale(1.05);
+}
+
+.room-package-title {
+  color: black;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 600px;
+  text-align: center;
+}
+
+.inclusion-title{
+  color: black;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 300px;
+  margin-left: 50px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.package-detail{
+  color: black;
+  font-size: 18px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.inclusion{
+  color: rgb(153, 153, 153);
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 3px;
+  padding-bottom: 5px;
+  margin-left: 50px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 5px;
+    padding: 25px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.5s ease-in-out;
+    user-select: none;
+    border-radius: 0 15px 15px 0;
+    background-color: rgba(0,0,0,0.05);
+}
+
+
+.fade {
+  animation: fadeIn ease 0.5s;
+  -webkit-animation: fadeIn ease 0.5s;
+  -moz-animation: fadeIn ease 0.5s;
+  -o-animation: fadeIn ease 0.5s;
+  -ms-animation: fadeIn ease 0.5s;
+  }
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  .fade2 {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.08);
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}

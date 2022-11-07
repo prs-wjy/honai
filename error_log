@@ -1,0 +1,1 @@
+[25-Oct-2020 05:05:24 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/honaires/public_html/foalhead4/checkin-conn.php on line 16

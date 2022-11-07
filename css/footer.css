@@ -1,0 +1,138 @@
+.footer-section{
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    box-sizing: border-box;
+    padding: 0 30px;
+    z-index: 2000;
+ }
+
+ .footer-layout{
+    position: center;
+    flex: 30%;
+    max-width: 100%;
+    height: 300px;
+    background-color: rgb(29, 29, 29);;
+    display: flex;
+    padding: 0 20;
+    box-sizing: border-box;
+    
+ }
+
+ .footer-content{
+    position: relative;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    flex-direction: column;
+    z-index: 100;
+    height: 300px;
+    background-color: rgb(29, 29, 29);;
+ }
+
+.title-footer{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+ }
+
+ .caption-footer{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgb(151, 151, 151);
+ }
+
+ /* Kanan */
+ .about-title{
+     font-size: 13px;
+     color: white;
+     margin-top: 10px;
+     margin-left: 30px;
+ }
+
+ .about-caption{
+     font-size: 12px;
+     color: rgb(151, 151, 151);
+     margin-top: 8px;
+     margin-left: 30px;
+     text-align: left;
+ }
+
+ footer a{
+     text-decoration: none;
+ }
+
+/* Tengah */
+footer form.example input[type=text] {
+    height: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    float: left;
+    border: none;
+    width: 85%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  footer form.example button {
+    float: left;
+    width: 15%;
+    height:40px;
+    background: #2196F3;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    border: none;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  footer form.example button:hover {
+    background: #0b7dda;
+  }
+
+  .sosmed{
+    position: relative;
+    text-align: center;
+  }
+
+  
+  /* Kiri */
+  .logo-footer{
+    width: 200px;
+    margin-top: 50px;
+    height: auto;
+}
+
+.reward{
+    font-size: 13px;
+    color: white;
+    margin-top: 40px;
+}
+
+.center-reward{
+    margin-top: 10px;
+    display: flex;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+  .copyright{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    display: none;
+}
+
+

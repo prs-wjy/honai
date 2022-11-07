@@ -1,0 +1,226 @@
+<html>
+
+<head>
+  <title>Honai Resort</title>
+  <link rel="stylesheet" href="css/cafe.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/btn-booking.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+  <link rel="stylesheet" href="css/font.css" />
+</head>
+
+<body>
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <img src="img/logo-honai.png" class="logo-honai" />
+                </a>
+                <li><a href="checkin.php" class="nav-content">Check-in</a></li>
+                <li><a href="gallery.html" class="nav-content">Gallery</a></li>
+                <li><a href="package.html" class="nav-content">Package</a></li>
+                <link rel="stylesheet" href="css/btn-booking.css" />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            </ul>
+        </nav>
+    <a href="https://staahmax.staah.net/be/indexpackdetail?propertyId=MTcyMQ==&individual=true">
+        <button class="book-btn-fix">Book Now</button>
+    </a>
+    <!-- Breadcrumb -->
+    <div class="package-breadcrumb">
+        <h1 class="package-title">Ethnic Brewlab Coffee</h1>
+        <div class="row">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Ethnic Brewlab Coffee</li>
+              </ul>
+        </div>
+    </div>
+
+    <div class="section-1">
+        <div class="slideshow-container">
+            <div class="mySlides fade s1">
+            </div>
+            <div class="mySlides fade s2">
+            </div>
+            <div class="mySlides fade s3">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="section1-paragraph">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ducimus in vero a corrupti odio
+                qui reiciendis dignissimos veritatis cum perspiciatis pariatur voluptatibus nihil sequi sint blanditiis,
+                dicta voluptatem repellat?
+            </p>
+            <button class="button-menu">Visit Ethnic Brewlab Website</button>
+        </div>
+    </div>
+
+    <div id="section2">
+        <div class="section2-container">
+            <div class="section2-layout">
+                <a href="room.html" class="link">
+                    <div class="section2-layout-content">
+                        <img src="img/room.jpg" alt="">
+                    </div>
+                    <h1 id="section2-foto-title">Honai Room</h1>
+                    <div id="line"></div>
+            </div>
+            </a>
+            <div class="section2-layout">
+                <a href="kitchen.html" class="link">
+                    <div class="section2-layout-content">
+                        <img src="img/a.jpg" alt="">
+                    </div>
+                    <h1 id="section2-foto-title">Honai Kitchen</h1>
+                    <div id="line"></div>
+            </div>
+            </a>
+            <div class="section2-layout">
+                <a href="spa.html" class="link">
+                    <div class="section2-layout-content">
+                        <img src="img/spa.jpg" alt="">
+                    </div>
+                    <h1 id="section2-foto-title">Honai SPA</h1>
+                    <div id="line"></div>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        setInterval(() => {
+            if (slideIndex === 1) {
+                slideIndex = 2
+                showSlides(slideIndex)
+            } else if (slideIndex == 2) {
+                slideIndex = 3
+                showSlides(slideIndex)
+            } else {
+                slideIndex = 1
+                showSlides(slideIndex)
+            }
+        }, 3000)
+    </script>
+</body>
+<!-- Footer -->
+<footer>
+    <div class="footer-section">
+        <div class="footer-layout">
+            <!-- Kiri -->
+            <div class="footer-content">
+                <a href="index.html"><img class="logo-footer" src="img/logo-honai.png" alt=""></a>
+               <div class="caption-footer">Welcome to Honai, a uniquely traditional Bali Wellness Resort in the countryside of Ubud, Bali.</div>
+               <div class="reward">Our Reward :</div>
+               <a target="_blank" href="https://www.tripadvisor.co.id/Hotel_Review-g297701-d10878650-Reviews-Honai_Resort-Ubud_Gianyar_Regency_Bali.html">
+                    <div class="center-reward">
+                        <i class="fa fa-tripadvisor"></i>
+                        <div class="caption-footer">Certificate of Excellence 2018</div>
+                    </div>
+                </a>
+               
+            </div>
+
+            <!-- Tengah -->
+            <div class="footer-content">
+                <div class="title-footer">SIGN UP NEWSLETTER</div>
+                <div class="caption-footer">Be the first to know about special offers and upcoming retreat dates!</div>
+                <form class="example" action="">
+                    <input type="text" placeholder="Input your email address" name="search">
+                    <button type="submit"><i>✔</i></button>
+                </form>
+                <div class="sosmed">
+                    <a target="_blank" href="https://web.facebook.com/honairesort" class="fa fa-facebook"></a>
+                    <a target="_blank" href="#" class="fa fa-twitter"></a>
+                    <a target="_blank" href="https://www.instagram.com/honairesort/" class="fa fa-instagram"></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCJB0l48-7kxY2trnu91QtXw" class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <!-- Kanan -->
+            <div class="footer-content">
+                <div class="title-footer">ABOUT US</div>
+                <div class="caption-footer">Want to know about us?</div>
+                <br>
+                <div class="about-title">Address :</div>
+                <a target="_blank" href="https://maps.google.com/?q=Honai%20Resort,%20Ubud,%20Bali"><div class="about-caption">Jl. Sri Wedari, Tegallantang, Ubud, Gianyar, Bali - Indonesia</div></a>
+                <div class="about-title">Have any question?</div>
+                <a href="mailto:info@honairesort.com"><div class="about-caption">info@honairesort.com</div></a>
+                <div class="about-title">Phone :</div>
+                <div class="about-caption">+62 361 9081508</div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="copyright-text">&copy; 2020 honairesort.com</div>
+    </div>
+</footer>
+
+<style>
+    .fa {
+        padding: 12px;
+        font-size: 20px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+    .fa-tripadvisor{
+        margin-top: 5px;
+        margin-right: 10px;
+        background: rgb(48, 138, 85);
+        color: white;
+    }
+</style>
+<!-- End Footer -->
+
+</html>

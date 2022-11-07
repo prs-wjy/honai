@@ -1,0 +1,46 @@
+nav {
+  opacity: 1;
+  width: 100%;
+  background: #26262600;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  padding: 25px;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  /*font-weight: bold;*/
+}
+
+nav li a:hover {
+  background-color:#3a3938;
+  transition: all 0.5s ease-in-out;
+}
+
+nav li a.active {
+  background-color:#3a3938;
+}
+
+.logo-honai {
+  width: 170px;
+  position: relative;
+  z-index: 100;
+  left: 50%;
+  top: 35px;
+  transform: translate(-50%, -50%);
+}
+
